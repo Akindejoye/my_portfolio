@@ -1,9 +1,11 @@
 import './intro.css';
 import MyPhoto from '../../images/avater.png';
+import { Link as LinkScroll } from 'react-scroll';
+import { Link } from 'react-router-dom';
 
 const Intro = () => {
     return (
-        <div className='i'>
+        <div className='i' id='home'>
             <div className='i-left'>
                 <div className='i-left-wrapper'>
                     <h2 className="i-intro">Hello, My name  is</h2>
@@ -23,11 +25,9 @@ const Intro = () => {
                        and online stores.
                    </p>
                     <div className='i-btn-box'>
-                        <a href="contact" className='i-link-hire'>
-                            <button className='i-btn-hire'>
+                            <LinkScroll className='i-btn-hire' to="contact">
                                 Hire Me
-                            </button>
-                        </a>
+                            </LinkScroll>
                     </div>
                 </div>
             </div>

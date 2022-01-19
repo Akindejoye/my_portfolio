@@ -6,8 +6,8 @@ import Contact from './components/contact/Contact';
 import Toggle from "./components/toggle/Toggle";
 import { useContext } from "react";
 import { ThemeContext } from './context';
-import Container from "./components/Container";
 import Navigation from "./components/nav/Navigation";
+import Home from './Page/Home';
 
 const App = () => {
   const theme = useContext(ThemeContext);
@@ -15,14 +15,8 @@ const App = () => {
   return (
     <div style={{ backgroundColor:darkMode ? '#222' : '#fff', color: darkMode && '#fff'}}>
       <Router>
-          {/* <Container /> */}
-          <Navigation />
           <Switch>
-            <Route exact path ="/" component={Intro} />
-            <Route path='/toggle' component={Toggle} />
-            <Route path='/about' component={About} />
-            <Route path='/product' component={ProductList} />
-            <Route path='/contact' component={Contact} />
+            <Route exact path ="/" component={Home} />
           </Switch>
         </Router>
     </div>

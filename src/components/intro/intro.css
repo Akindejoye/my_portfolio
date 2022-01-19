@@ -68,16 +68,20 @@ position: relative;
     margin-top: 2rem;
 }
 
-.i-link-hire {
-    text-decoration: none;
-}
-
 .i-btn-hire {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 15rem;
+    height: 5rem;
     text-transform: uppercase;
     letter-spacing: 5px;
     border-radius: 1rem;
     font-size: 1.7rem;
+    color: #fff;
+    background-color: #59b256;
+    cursor: pointer;
+    
     
     
 }

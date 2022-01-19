@@ -4,7 +4,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: #f0f3f8; */
+    background-color: #f0f3f8;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 .nav-left {
@@ -15,11 +18,16 @@
     font-size: 4rem;
     letter-spacing: 4px;
     font-weight:lighter;
+    cursor: pointer;
     
 }
 
 .nav-right {
 margin-right: 3rem;
+}
+
+.nav-icon {
+    display: none;
 }
 
 .nav-list {
@@ -33,14 +41,34 @@ margin-right: 3rem;
     color: #000;
     margin-right: 4rem;
     cursor: pointer;
+    width: auto;
 
 }
 
 .nav-listItem:hover {
-    /* color: #59b256; */
     border-bottom: 2px solid #59b256;
 }
 
 .link {
     text-decoration: none;
+}
+
+.link.active {
+    /* border-bottom: 2px solid #59b256; */
+}
+
+
+/***************Media Query**************/
+
+@media screen and (max-width: 50em) {
+
+    .nav-list {
+        display: none;
+    }
+
+    .nav-icon {
+        display: block;
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
 }
