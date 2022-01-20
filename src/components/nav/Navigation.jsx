@@ -1,13 +1,12 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-scroll';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars } from 'react-icons/fa';
 import './navigation.css';
 import { animateScroll as scroll } from 'react-scroll';
 
-const Navigation = () => {
+const Navigation = ({ openNav }) => {
 
     const [scrollNav, setScrollNav] = useState(false);
-    const [mobileNav, setMobileNav] = useState(false);
 
     const toggleHome = () => {
         scroll.scrollToTop();
@@ -30,22 +29,18 @@ const Navigation = () => {
 
     }, []);
 
-    const sideNav = () => {
-        setMobileNav(!mobileNav)
-    }
-
     return ( 
         <div className={scrollNav ? 'nav-2' : 'nav-1'}>
             <div className='nav-left'>
-                <h1 className='nav-title' onClick={toggleHome}>Francis Akindejoye</h1>
+                <h1 className='nav-title' onClick={toggleHome}>Francis</h1>
             </div>
             <div className='nav-right'>
-                <div 
+                <button 
                     className='nav-icon'
-                    onClick={sideNav}
+                    onClick={openNav}
                 >
-                    {mobileNav ? <FaTimes /> : <FaBars />}
-                </div>
+                    <FaBars />
+                </button>
                 <ul className='nav-list'>
                     <Link 
                         to='home' 

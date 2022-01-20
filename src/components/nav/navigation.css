@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:  #fff;
+    background-color:  #fffdd09a;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -31,6 +31,7 @@
     letter-spacing: 4px;
     font-weight:lighter;
     cursor: pointer;
+    margin-left: 3rem;
     
 }
 
@@ -80,11 +81,10 @@ margin-right: 3rem;
 
     .nav-icon {
         display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform: translate(-100%, 60%);
-        font-size: 1.8rem;
+        border: none;
+        background: transparent;
+        color: #000;
+        font-size: 2.5rem;
         cursor: pointer;
     }
 }
