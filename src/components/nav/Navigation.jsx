@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { Link } from 'react-scroll';
 import { FaBars } from 'react-icons/fa';
 import './navigation.css';
@@ -5,12 +6,31 @@ import { animateScroll as scroll } from 'react-scroll';
 
 const Navigation = () => {
 
+    const [scrollNav, setScrollNav] = useState(false);
+
     const toggleHome = () => {
         scroll.scrollToTop();
     }
 
+    const changeBackgroundNav = () => {
+        if(window.scrollY >=80) {
+            setScrollNav(true)
+        } else {
+            setScrollNav(false)
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', changeBackgroundNav)
+
+        return () => {
+            window.removeEventListener('scroll', changeBackgroundNav)
+        }
+
+    }, []);
+
     return ( 
-        <div className='nav'>
+        <div className={scrollNav ? 'nav-2' : 'nav-1'}>
             <div className='nav-left'>
                 <h1 className='nav-title' onClick={toggleHome}>Francis Akindejoye</h1>
             </div>
