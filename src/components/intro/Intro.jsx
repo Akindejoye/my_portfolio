@@ -1,7 +1,6 @@
 import './intro.css';
-import MyPhoto from '../../images/avater.png';
+import Developer from '../../images/developer_animie.png';
 import { Link as LinkScroll } from 'react-scroll';
-import { Link } from 'react-router-dom';
 
 const Intro = () => {
     return (
@@ -33,11 +32,11 @@ const Intro = () => {
             </div>
             <div className='i-right'>
                 {/* <div className="i-bg"></div> */}
-                {/* <img
-                    src={MyPhoto} 
-                    alt="Profile" 
+                <img
+                    src={Developer} 
+                    alt="Developer" 
                     className='i-img' 
-                /> */}
+                />
             </div>
         </div>
     );

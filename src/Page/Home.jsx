@@ -5,7 +5,6 @@ import Intro from "../components/intro/Intro";
 import MobileNav from "../components/mobileNav/MobileNav";
 import Navigation from "../components/nav/Navigation";
 import ProductList from "../components/productList/ProductList";
-import Toggle from "../components/toggle/Toggle";
 
 const Home = () => {
 

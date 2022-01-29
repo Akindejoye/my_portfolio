@@ -19,7 +19,7 @@ const Navigation = ({ openNav }) => {
             setScrollNav(false)
         }
     }
-
+    
     useEffect(() => {
         window.addEventListener('scroll', changeBackgroundNav)
 
