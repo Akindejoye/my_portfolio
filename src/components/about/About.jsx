@@ -1,5 +1,4 @@
 import './about.css';
-import Award from '../../images/award.png';
 import MyPhoto from '../../images/my-photo-2.jpg';
 import React from "react";
 
