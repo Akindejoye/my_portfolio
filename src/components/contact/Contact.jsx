@@ -5,6 +5,7 @@ import Email from '../../images/email.png';
 import Address from '../../images/address.png';
 import { useContext, useRef, useState } from 'react';
 import { ThemeContext } from './../../context';
+import React from "react";
 
 const Contact = () => {
 

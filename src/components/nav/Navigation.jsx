@@ -3,6 +3,7 @@ import { Link } from 'react-scroll';
 import { FaBars } from 'react-icons/fa';
 import './navigation.css';
 import { animateScroll as scroll } from 'react-scroll';
+import React from "react";
 
 const Navigation = ({ openNav }) => {
 

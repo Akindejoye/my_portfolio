@@ -1,7 +1,8 @@
-import { BrowserRouter as Router, Redirect, Route, Routes, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { useContext } from "react";
 import { ThemeContext } from './context';
 import Home from './Page/Home';
+import React from "react";
 
 const App = () => {
   const theme = useContext(ThemeContext);

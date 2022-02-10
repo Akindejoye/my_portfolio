@@ -1,6 +1,7 @@
 import './intro.css';
 import Developer from '../../images/developer_animie.png';
 import { Link as LinkScroll } from 'react-scroll';
+import React from "react";
 
 const Intro = () => {
     return (
