@@ -3,6 +3,7 @@ import Commercefy from './images/commercefy.png';
 import NatureBlog from './images/nature-blog.png';
 import Menu from './images/menu.png';
 import Cryptodashboard from './images/cryptodashboard.png';
+import OceanSea from './images/oceansea.png';
 
 export const products = [
     {
@@ -30,5 +31,10 @@ export const products = [
       id: 5,
       img: Cryptodashboard,
       link: "https://cryptoexchangerd.netlify.app/",
+    },
+    {
+      id: 6,
+      img: OceanSea,
+      link: "https://oceansea-blockchain.vercel.app/",
     },
   ];
