@@ -3,6 +3,7 @@ import './contact.css';
 import Phone from '../../images/phone.png';
 import Email from '../../images/email.png';
 import Address from '../../images/address.png';
+import Github from '../../images/github.png';
 import { useContext, useRef, useState } from 'react';
 import { ThemeContext } from './../../context';
 import React from "react";
@@ -48,6 +49,14 @@ const Contact = () => {
                                 className='c-icon' 
                             />
                             francis.akindejoye@gmail.com
+                        </div>
+                        <div className="c-info-item">
+                            <img 
+                                src={Github} 
+                                alt="Github"
+                                className='c-icon' 
+                            />
+                            https://github.com/Akindejoye
                         </div>
                         <div className="c-info-item">
                             <img 
