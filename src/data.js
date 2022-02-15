@@ -4,6 +4,7 @@ import NatureBlog from './images/nature-blog.png';
 import Menu from './images/menu.png';
 import Cryptodashboard from './images/cryptodashboard.png';
 import OceanSea from './images/oceansea.png';
+import Tesla from './images/tesla.png';
 
 export const products = [
     {
@@ -36,5 +37,10 @@ export const products = [
       id: 6,
       img: OceanSea,
       link: "https://oceansea-blockchain.vercel.app/",
+    },
+    {
+      id: 7,
+      img: Tesla,
+      link: "https://tesla-classic.netlify.app/",
     },
   ];

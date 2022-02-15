@@ -11,13 +11,13 @@ const Intro = () => {
                     <h2 className="i-intro">Hello, My name  is</h2>
                     <h1 className="i-name">Francis Akindejoye</h1>
                    <div className='i-title'>
-                    <div className="i-title-wrapper">
-                        <div className="i-title-item">React & React-Redux</div>
-                        <div className="i-title-item">NodeJs</div>
-                        <div className="i-title-item">MongoDB & Express</div>
-                        <div className="i-title-item">Solidity & Blockchain</div>
-                        <div className="i-title-item">HTML & CSS</div>
-                    </div>
+                        <div className="i-title-wrapper">
+                            <div className="i-title-item">React & React-Redux</div>
+                            <div className="i-title-item">NodeJs</div>
+                            <div className="i-title-item">MongoDB & Express</div>
+                            <div className="i-title-item">Solidity & Blockchain</div>
+                            <div className="i-title-item">HTML & CSS</div>
+                        </div>
                    </div>
                    <p className="i-desc">
                        I design and develop services for customers of all sizes,
@@ -32,7 +32,6 @@ const Intro = () => {
                 </div>
             </div>
             <div className='i-right'>
-                {/* <div className="i-bg"></div> */}
                 <img
                     src={Developer} 
                     alt="Developer" 

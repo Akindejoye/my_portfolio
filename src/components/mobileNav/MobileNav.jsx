@@ -13,6 +13,7 @@ const MobileNav = ({isMobile, openNav}) => {
         <>
         <div 
             className={`${isMobile ? 'mobileNavContainer' : 'mobileClear'}`}
+            onClick={openNav}
         >
             <button className="mobileNavIconClose" onClick={openNav}>
                 <FaTimes />
