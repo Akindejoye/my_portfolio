@@ -6,11 +6,17 @@ import Address from '../../images/address.png';
 import Github from '../../images/github.png';
 import { useContext, useRef, useState } from 'react';
 import { ThemeContext } from './../../context';
+import toast, { Toaster } from 'react-hot-toast';
 import React from "react";
 
 const Contact = () => {
 
     const [done, setDone] = useState(false);
+    const [name, setName] = useState('');
+    const [subject, setSubject] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+
     const formRef = useRef();
     const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
@@ -22,13 +28,27 @@ const Contact = () => {
       .then((result) => {
           console.log(result.text);
           setDone(true)
+          setName('')
+          setSubject('')
+          setEmail('')
+          setMessage('')
+          toast.success('Email Sent!', {
+              duration: 2000,
+              position: 'top-right',
+              style: {
+                  background: 'green',
+                  color: 'white'
+              },
+          });
       }, (error) => {
           console.log(error.text);
       });
     }
 
+
     return ( 
         <div className="contact" id="contact">
+            <Toaster position="top-center" />
             <div className="c-bg"></div>
             <div className="c-wrapper">
                 <div className="c-left">
@@ -56,7 +76,7 @@ const Contact = () => {
                                 alt="Github"
                                 className='c-icon' 
                             />
-                            https://github.com/Akindejoye
+                           <a href="https://github.com/Akindejoye" target='_blank'>https://github.com/Akindejoye</a>
                         </div>
                         <div className="c-info-item">
                             <img 
@@ -74,12 +94,35 @@ const Contact = () => {
                         freelancing if the right project comes along. me.
                     </div>
                     <form ref={formRef} onSubmit={handleSubmit}>
-                        <input style={{backgroundColor: darkMode && '#333'}} type="text" placeholder='Name' name='user_name' />
-                        <input style={{backgroundColor: darkMode && '#333'}} type="text" placeholder='Subject' name='user_subject' />
-                        <input style={{backgroundColor: darkMode && '#333'}} type="text" placeholder='Email' name='user_email' />
-                        <textarea name="message" rows="5" placeholder='Message' style={{backgroundColor: darkMode && '#333'}} />
+                        <input 
+                            style={{backgroundColor: darkMode && '#333'}} 
+                            type="text" placeholder='Name' 
+                            name='user_name'
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
+                        />
+                        <input 
+                            style={{backgroundColor: darkMode && '#333'}} 
+                            type="text" placeholder='Subject' 
+                            name='user_subject'
+                            value={subject}
+                            onChange={(e) => setSubject(e.target.value)} 
+                        />
+                        <input 
+                            style={{backgroundColor: darkMode && '#333'}} 
+                            type="text" placeholder='Email' 
+                            name='user_email'
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)} 
+                        />
+                        <textarea 
+                            name="message" 
+                            rows="5" 
+                            placeholder='Message'
+                            value={message}
+                            onChange={(e) => setMessage(e.target.value)} 
+                            style={{backgroundColor: darkMode && '#333'}} />
                         <button type='submit'>Submit</button>
-                        {done && "Thank You!"}
                     </form>
                 </div>
             </div>
