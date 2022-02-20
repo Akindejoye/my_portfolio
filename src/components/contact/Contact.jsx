@@ -76,7 +76,12 @@ const Contact = () => {
                                 alt="Github"
                                 className='c-icon' 
                             />
-                           <a href="https://github.com/Akindejoye" target='_blank'>https://github.com/Akindejoye</a>
+                           <a 
+                            href="https://github.com/Akindejoye" 
+                            target='_blank'
+                            rel="noopener noreferrer"
+                            >https://github.com/Akindejoye
+                            </a>
                         </div>
                         <div className="c-info-item">
                             <img 
@@ -123,6 +128,9 @@ const Contact = () => {
                             onChange={(e) => setMessage(e.target.value)} 
                             style={{backgroundColor: darkMode && '#333'}} />
                         <button type='submit'>Submit</button>
+                        {
+                            done && (console.log('email sent'))
+                        }
                     </form>
                 </div>
             </div>
