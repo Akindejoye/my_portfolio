@@ -2,7 +2,6 @@ import DarkHorse from './images/dark-horse-agency.png';
 import Commercefy from './images/commercefy.png';
 import NatureBlog from './images/nature-blog.png';
 import Menu from './images/menu.png';
-import Cryptodashboard from './images/cryptodashboard.png';
 import OceanSea from './images/oceansea.png';
 import Tesla from './images/tesla.png';
 import UserAdmin from './images/useradmin.png';
