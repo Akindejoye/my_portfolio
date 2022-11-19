@@ -70,8 +70,8 @@ margin-right: 3rem;
     text-decoration: none;
 }
 
-.link.active {
-    /* border-bottom: 2px solid #59b256; */
+.active {
+    color: red;
 }
 
 
