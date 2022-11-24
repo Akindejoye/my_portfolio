@@ -5,41 +5,47 @@ import Menu from './images/menu.png';
 import OceanSea from './images/oceansea.png';
 import Tesla from './images/tesla.png';
 import UserAdmin from './images/useradmin.png';
+import Yolo from './images/yolo.png';
 
 export const products = [
     {
       id: 1,
+      img: Yolo,
+      link: "https://yolo-ecommerce-rosy.vercel.app/",
+    },
+    {
+      id: 2,
       img: DarkHorse,
       link: "https://dark-horse-agency.netlify.app/",
     },
     {
-      id: 2,
+      id: 3,
       img: Commercefy,
       link: "https://commercefy.netlify.app/",
     },
     {
-      id: 3,
+      id: 4,
       img: NatureBlog,
       link: "https://nature-blogapp.netlify.app/",
     },
     {
-      id: 4,
+      id: 5,
       img: Menu,
       link: "https://menu-delicacies.netlify.app/",
     },
     
     {
-      id: 5,
+      id: 7,
       img: UserAdmin,
       link: "https://useradmingeneral.netlify.app/",
     },
     {
-      id: 6,
+      id: 7,
       img: OceanSea,
       link: "https://oceansea-blockchain.vercel.app/",
     },
     {
-      id: 7,
+      id: 8,
       img: Tesla,
       link: "https://tesla-classic.netlify.app/",
     },
