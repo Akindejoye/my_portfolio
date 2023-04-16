@@ -1,7 +1,6 @@
 import { v4 as uuidv4 } from 'uuid';
 import DarkHorse from './images/dark-horse-agency.png';
 import EvoGym from './images/evo-gym.png';
-import NatureBlog from './images/nature-blog.png';
 import Menu from './images/menu.png';
 import OceanSea from './images/oceansea.png';
 import Tesla from './images/tesla.png';
