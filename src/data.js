@@ -7,6 +7,7 @@ import OceanSea from './images/oceansea.png';
 import Tesla from './images/tesla.png';
 import UserAdmin from './images/useradmin.png';
 import Yolo from './images/yolo.png';
+import NewsBlog from './images/news-blog.png';
 
 export const products = [
   {
@@ -26,8 +27,8 @@ export const products = [
     },
     {
       id: uuidv4(),
-      img: NatureBlog,
-      link: "https://nature-blogapp.netlify.app/",
+      img: NewsBlog,
+      link: "https://news-blog-iota-woad.vercel.app/",
     },
     {
       id: uuidv4(),
