@@ -7,6 +7,7 @@ import Tesla from './images/tesla.png';
 import UserAdmin from './images/useradmin.png';
 import Yolo from './images/yolo.png';
 import NewsBlog from './images/news-blog.png';
+import EcomVanilla from './images/ecommerce-vanilla.png';
 
 export const products = [
   {
@@ -19,35 +20,40 @@ export const products = [
     img: EvoGym,
     link: "https://evogym-neon.vercel.app/",
   },
-    {
-      id: uuidv4(),
-      img: DarkHorse,
-      link: "https://dark-horse-agency.netlify.app/",
-    },
-    {
-      id: uuidv4(),
-      img: NewsBlog,
-      link: "https://news-blog-iota-woad.vercel.app/",
-    },
-    {
-      id: uuidv4(),
-      img: Menu,
-      link: "https://menu-delicacies.netlify.app/",
-    },
-    
-    {
-      id: uuidv4(),
-      img: UserAdmin,
-      link: "https://useradmingeneral.netlify.app/",
-    },
-    {
-      id: uuidv4(),
-      img: OceanSea,
-      link: "https://oceansea-blockchain.vercel.app/",
-    },
-    {
-      id: uuidv4(),
-      img: Tesla,
-      link: "https://tesla-classic.netlify.app/",
-    },
-  ];
+  {
+    id: uuidv4(),
+    img: EcomVanilla,
+    link: "https://ecommerce-vanilla-design.vercel.app/",
+  },
+  {
+    id: uuidv4(),
+    img: DarkHorse,
+    link: "https://dark-horse-agency.netlify.app/",
+  },
+  {
+    id: uuidv4(),
+    img: NewsBlog,
+    link: "https://news-blog-iota-woad.vercel.app/",
+  },
+  {
+    id: uuidv4(),
+    img: Menu,
+    link: "https://menu-delicacies.netlify.app/",
+  },
+  
+  {
+    id: uuidv4(),
+    img: UserAdmin,
+    link: "https://useradmingeneral.netlify.app/",
+  },
+  {
+    id: uuidv4(),
+    img: OceanSea,
+    link: "https://oceansea-blockchain.vercel.app/",
+  },
+  {
+    id: uuidv4(),
+    img: Tesla,
+    link: "https://tesla-classic.netlify.app/",
+  },
+];
