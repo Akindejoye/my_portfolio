@@ -33,9 +33,9 @@ const Navigation = ({ openNav }) => {
     <Fade top>
       <div className={scrollNav ? "nav-2" : "nav-1"}>
         <div className="nav-left">
-          <h1 className="nav-title" onClick={toggleHome}>
+          {/* <h1 className="nav-title" onClick={toggleHome}>
             Francis
-          </h1>
+          </h1> */}
         </div>
         <div className="nav-right">
           <button className="nav-icon" onClick={openNav}>
